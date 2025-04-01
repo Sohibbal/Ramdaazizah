@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="countdown/dark.min.css">
+    <script src="countdown/simplyCountdown.umd.js"></script>
+
+  </head>
+
+  <body>
+    <section id="cover" class="cover w-100 h-100 p-3 m-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4> Kepada Bpk/Ibu/Saudar/I, </h4>
+        <h1 class="text-danger">RAMDA & AZIZAH</h1>
+        <p>Resepsi akan diselenggarakan dalam</p>
+        <div class="simply-countdown-dark"></div>
+        <a href="#undangan" class="arrow position-absolute bottom-0 start-50 translate-middle-x mb-3">
+          <i class="bi bi-arrow-bar-down fs-1"></i></a>
+      </main>
+    </section>
+
+    <nav id="undangan" class="navbar navbar-expand-md bg-body-tertiary sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">DANUR</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list text-white fs-1"></i>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DANUR</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#galery">Galery</a>
+              <a class="nav-link" href="#confirm">Confirm</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home px-4">
+      <div class="container">
+        <div class="row justify-content-center acara">
+          <div class="col-md-8 text-center">
+            <h2>Acara Penikahan</h2>
+            <h3>Diselenggarakan pada 05 Juni 2025 di Pekanbaru, Riau.</h3>
+            <p>Dengan segala hormat, kami menggundang Bapak/Ibu, Saudara/i, untuk menghadiri acara pernikahaan kami dan menikmati jamuan resepsi pernikahan kami.</p>
+          </div>
+        </div>
+
+        <div class="row pengantin">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Safrin <br>Nada Ramdani</h3>
+                <p>Anak pertama dari bapak Abdul Kasim <br> dan Ibu Siti</p>
+              </div>
+              <div class="col-4">
+                <img src="img/Dani2.jpg" alt="Safrin" class="img-responsive">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/Ainur2.jpg" alt="Ainur" class="img-responsive d-none d-md-block">
+                <img src="img/Ainur.jpg" alt="Ainur" class="img-responsive d-md-none">
+              </div>
+              <div class="col-8">
+                <h3>Ai'nur<br>Azizah</h3>
+                <p>Anak kedua dari bapak Santoso <br> dan Ibu Megawatik</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info" id="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <div class="row justify-content-center mt-5 mb-5">
+              <div class="col-md-5 col-5 text-center">
+                <div class="card text-center mb-3">
+                  <div class="card-header">
+                    Akad Nikah
+                  </div>
+                  <div class="card-body">
+                    <div class="row justify-content-center">
+                      <div class="col-md-10">
+                        <i class="bi bi-calendar-heart d-block text-danger mb-1"></i>
+                        <span>Jumat, 6 Juni 2025 <br>08.00-10.00 WIB</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-5 text-center">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Resepsi Pernikahan
+                  </div>
+                  <div class="card-body">
+                    <div class="row justify-content-center">
+                      <div class="col-md-10">
+                        <i class="bi bi-calendar-heart d-block text-danger  mb-1"></i>
+                        <span>Sabtu, 7 Juni 2025 <br>08.00-Selesai WIB</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <p>Alamat: Teladan Court <br>Gg. Zamrud 1, Kec. Tampan, Kota Pekanbaru, Riau</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8170887.9935119795!2d92.4332547!3d0.4570067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a949a611bcff%3A0x8d28d7fa4338d2bb!2sTeladan%20Badminton%20Court!5e0!3m2!1sen!2sid!4v1743222416338!5m2!1sen!2sid" width="83%" height="250" style="border: solid 3px #ffffff; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Cerita Kami</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Voluptatem magnam sed exercitationem dolor! Ratione, sapiente.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(img/Ainur.jpg);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-header">
+                  </div>
+                  <div class="timline-body">
+                    <h4>Awal Bertemu</h4>
+                    <p class="panel-p">Ramda dan Azizah bertemu di bangku kuliah dalam satu kelompok tugas. Awalnya hanya teman diskusi, 
+                      namun kebersamaan menumbuhkan perasaan di antara mereka.  </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-genap">
+                <div class="timeline-image" style="background-image: url(img/Ainur.jpg);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-header">
+                  </div>
+                  <div class="timline-body">
+                    <h4>Mulai-mulai</h4>
+                    <p class="panel-p">Setelah lulus, mereka menjalani hubungan serius meski menghadapi berbagai tantangan. Dengan cinta dan kesabaran, 
+                      Ramda akhirnya melamar Azizah di tempat penuh kenangan.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline-image" style="background-image: url(img/Ainur.jpg);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-header">
+                  </div>
+                  <div class="timline-body">
+                    <h4>Janur Kuning</h4>
+                    <p class="panel-p">Kini, mereka bersiap untuk hari bahagia, mengikat janji suci dan memulai hidup baru bersama. 
+                      Mereka yakin, perjalanan ini adalah awal dari kisah yang lebih indah.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galery" class="galery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Galeri</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Voluptatem magnam sed exercitationem dolor! Ratione, sapiente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="sticky.js"></script>
+  </body>
+
+</html>
