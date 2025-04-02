@@ -497,6 +497,70 @@ body{
     font-size: 1.2rem !important;
     letter-spacing: 0.5px;
   }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .simply-countdown-dark>.simply-section{
+    width:50px !important; 
+    height:50px !important;
+    padding:1.5rem !important
+  }
+
+  .simply-countdown-dark>.simply-section .simply-amount{
+    font-size:2.4rem !important
+  }
+  .simply-countdown-dark>.simply-section .simply-word{
+    font-size: 1rem !important
+  }
+
+  .timeline li{
+    margin-bottom: 8rem;
+  }
+
+  .timeline li .timeline-image{
+    left: 25% !important;
+    width: 140px;
+    height: 101px;
+  }
+
+  .timeline li.timeline-genap .timeline-image{
+    left: 75% !important;
+  }
+
+  .timeline li .timeline-panel{
+    width: 32% !important;
+    max-height: 400px !important;
+    top: 100px !important;
+    left: 8.8% !important;
+    border: 1px solid rgb(136, 136, 136);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding-top: 2rem;
+  }
+
+  .timeline li.timeline-genap .timeline-panel{
+    width: 32% !important;
+    max-height: 400px !important;
+    top: 100px !important;
+    left: -9.2% !important;
+    border: 1px solid rgb(136, 136, 136);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding-top: 2rem !important;
+  }
+
+  .timeline li h4{
+    font-size: 1.4rem;
+  }
+
+  .panel-p {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.5px;
+  }
 
   body {
     padding-right: 0 !important;
