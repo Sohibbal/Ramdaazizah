@@ -28,29 +28,39 @@
       </main>
     </section>
 
-    <nav id="undangan" class="navbar navbar-expand-md bg-body-tertiary sticky-top mynavbar">
+    <nav id="undangan" class="navbar navbar-expand sticky-top mynavbar">
       <div class="container">
         <a class="navbar-brand" href="#">DANUR</a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <i class="bi bi-list text-white fs-1"></i>
-        </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DANUR</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#home">Home</a>
-              <a class="nav-link" href="#info">Info</a>
-              <a class="nav-link" href="#story">Story</a>
-              <a class="nav-link" href="#galery">Galery</a>
-              <a class="nav-link" href="#confirm">Confirm</a>
-              <a class="nav-link" href="#gifts">Gifts</a>
-            </div>
-          </div>
+        <div class="navbar-nav ms-auto d-none d-sm-flex">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#info">Info</a>
+          <a class="nav-link" href="#story">Story</a>
+          <a class="nav-link" href="#galery">Galery</a>
+          <a class="nav-link" href="#confirm">Confirm</a>
+          <a class="nav-link" href="#gifts">Gifts</a>
         </div>
       </div>
+    </nav>
+
+    <!-- Bottom Nav -->
+    <nav class="navbar navbar-dark bg-danger navbar-expand d-sm-none d-lg-none d-xl-none fixed-bottom mynavbottom">
+      <ul class="navbar-nav nav-justified w-100">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#info" class="nav-link">Info</a>
+        </li>
+        <li class="nav-item">
+          <a href="#story" class="nav-link">Story</a>
+        </li>
+        <li class="nav-item">
+          <a href="#galery" class="nav-link">Galery</a>
+        </li>
+        <li class="nav-item">
+          <a href="#confirm" class="nav-link">Confirm</a>
+        </li>
+      </ul>
     </nav>
 
     <section id="home" class="home px-4">

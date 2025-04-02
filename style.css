@@ -57,7 +57,7 @@ body{
 
 /* navbar */
 
-.mynavbar{
+.mynavbar, .mynavbottom{
   background-color: rgba(0, 0, 0, 0.3) !important;
   backdrop-filter: blur(3px);
 }
