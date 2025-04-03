@@ -536,6 +536,7 @@ body{
   .arrow i {
     position: relative;
     top: -80px;
+    font-size: 25px !important;
   }
 }
 
