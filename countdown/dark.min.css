@@ -16,7 +16,7 @@
   align-items:center;
   justify-content:center;
   background: transparent;
-  border:2px solid whitesmoke;
+  border:1.5px solid #d4d4d4;
   border-radius:1rem;
   box-shadow:0 4px 6px -1px rgba(0,0,0,.2),0 2px 4px -1px rgba(0,0,0,.1),0 0 0 1px rgba(255,255,255,.05);
   transition:.3s cubic-bezier(.4, 0, .2, 1);backdrop-filter:blur(10px)
@@ -31,7 +31,7 @@
 .simply-countdown-dark>.simply-section .simply-amount{
   font-size:1.5rem;
   font-weight:700;
-  color:#D81F26;
+  color:#dc3545;
   line-height:1.2;
   letter-spacing:-.025em
 }

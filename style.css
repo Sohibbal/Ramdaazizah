@@ -1,8 +1,8 @@
 :root{
-  --red: #D81F26;
+  --red: #dc3545;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rba(0, 0, 0, 0.5);
-
+  --putih: #d4d4d4;
 }
 
 html {
@@ -35,18 +35,22 @@ body{
   /* background-color: var(--bg); */
 }
 
+.cover h4{
+  color: var(--putih);
+}
+
 .cover h1{
   font-family: "Bebas Neue", sans-serif;
   font-size: 8rem;
 }
 
 .cover p{
-  
+  color: var(--putih);
 }
 
 .arrow i {
   text-decoration: none;
-  color: #e9e9e9;
+  color: var(--putih);
 }
 
 .arrow i:hover {
@@ -111,20 +115,22 @@ body{
 }
 
 .home h2, h3, p {
-  color: white;
+  color: var(--putih);
 }
 
-.home h2, .info h2, .story h2, .galery h2{
+.home h2, .info h2, .story h2, .galery h2, .confirm h2, .gifts h2{
   font-family: "Bebas Neue", sans-serif;
   font-size: 4rem;
   font-weight: bold;
   color: var(--red);
+  letter-spacing: 2px;
 }
 
 .home h3{
   font-size: 1.3rem;
   color: #c7c7c7;
   margin-bottom: 0.6rem;
+  letter-spacing: 1px;
 }
 
 .home p{
@@ -160,7 +166,7 @@ body{
 
 .info .card{
   background-color: rgba(106, 106, 106, 0.1) !important;
-  color: white;
+  color: var(--putih);
   border: 1px solid #dadada;
 }
 
@@ -253,7 +259,8 @@ body{
 .timeline li h4{
   color: var(--red);
   font-size: 1.1rem;
-  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
 }
 .panel-p{
   font-size: 0.8rem !important;
@@ -314,7 +321,25 @@ body{
   margin: 0 auto 5px;
 }
 
+/* confirm */
+.confirm{
+  background-image: url(img/bg11.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 
+/* Gift */
+.gifts{
+  background-image: url(img/bg11.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 
 /* Responsif Media Query */
 
@@ -506,6 +531,11 @@ body{
 
   .mynavbar .nav-link{
     font-size: 1.1rem;
+  }
+
+  .arrow i {
+    position: relative;
+    top: -50px;
   }
 }
 
