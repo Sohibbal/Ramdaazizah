@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <section id="cover" class="cover w-100 h-100 p-3 m-auto text-center d-flex justify-content-center align-items-center text-white">
+    <section id="cover" class="cover w-100 h-100 p-3 m-auto text-center d-flex justify-content-center align-items-center text-white hide-navbar">
       <main>
         <h4> Kepada Bpk/Ibu/Saudara/I, Lord M.Ridwan</h4>
         <h1 class="text-danger">RAMDA & AZIZAH</h1>
@@ -40,27 +40,6 @@
           <a class="nav-link" href="#gifts">Gifts</a>
         </div>
       </div>
-    </nav>
-
-    <!-- Bottom Nav -->
-    <nav class="navbar navbar-dark bg-danger navbar-expand d-sm-none d-lg-none d-xl-none fixed-bottom mynavbottom">
-      <ul class="navbar-nav nav-justified w-100">
-        <li class="nav-item">
-          <a href="#home" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#info" class="nav-link">Info</a>
-        </li>
-        <li class="nav-item">
-          <a href="#story" class="nav-link">Story</a>
-        </li>
-        <li class="nav-item">
-          <a href="#galery" class="nav-link">Galery</a>
-        </li>
-        <li class="nav-item">
-          <a href="#confirm" class="nav-link">Confirm</a>
-        </li>
-      </ul>
     </nav>
 
     <section id="home" class="home px-4">
@@ -219,12 +198,71 @@
             </p>
           </div>
         </div>
+
+        <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2 justify-content-center mt-2 mx-2 mx-sm-3 galery-container">
+          <div class="col mt-5">
+            <div class="gallery-card">
+              <a href="img/Ainur.jpg" data-toggle="lightbox" data-caption="Danur 1" data-gallery="gallery">
+                <img src="img/Ainur.jpg" alt="Galeri1" class="img-fluid">
+              </a>
+              <div class="gallery-overlay">Galeri 1</div>
+            </div>
+          </div>
+
+          <div class="col mt-5">
+            <div class="gallery-card">
+              <a href="img/Ainur.jpg" data-toggle="lightbox" data-caption="Danur 2" data-gallery="gallery">
+                <img src="img/Ainur.jpg" alt="Galeri2">
+              </a>
+              <div class="gallery-overlay">Galeri 1</div>
+            </div>
+          </div>
+
+          <div class="col mt-5">
+            <div class="gallery-card">
+              <a href="img/Ainur.jpg" data-toggle="lightbox" data-caption="Danur 3" data-gallery="gallery">
+                <img src="img/Ainur.jpg" alt="Galeri3">
+              </a>
+              <div class="gallery-overlay">Galeri 1</div>
+            </div>
+          </div>
+
+          <div class="col mt-5">
+            <div class="gallery-card">
+              <a href="img/Ainur.jpg" data-toggle="lightbox" data-caption="Danur 4" data-gallery="gallery">
+                <img src="img/Ainur.jpg" alt="Galeri4">
+              </a>
+              <div class="gallery-overlay">Galeri 1</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     
+    <!-- Bottom Nav -->
+    <nav class="navbar navbar-dark bg-danger navbar-expand d-sm-none d-lg-none d-xl-none sticky-bottom mynavbottom">
+      <ul class="navbar-nav nav-justified w-100">
+        <li class="nav-item">
+          <a href="#home" class="nav-link"><i class="bi bi-house-heart-fill fs-1"></i><span class="small d-block fs-5">Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#info" class="nav-link"><i class="bi bi-postcard-heart-fill fs-1"></i><span class="small d-block fs-5">Info</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#story" class="nav-link"><i class="bi bi-arrow-through-heart-fill fs-1"></i><span class="small d-block fs-5">Story</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#galery" class="nav-link"><i class="bi bi-valentine fs-1"></i><span class="small d-block fs-5">Galery</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#confirm" class="nav-link"><i class="bi bi-chat-square-heart-fill fs-1"></i><span class="small d-block fs-5">Confirm</span></a>
+        </li>
+      </ul>
+    </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="sticky.js"></script>
   </body>
