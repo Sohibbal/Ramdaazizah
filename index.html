@@ -23,7 +23,7 @@
         <h1 class="text-danger">RAMDA & AZIZAH</h1>
         <p>Resepsi akan diselenggarakan dalam</p>
         <div class="simply-countdown-dark"></div>
-        <a href="#undangan" class="arrow position-absolute bottom-0 start-50 translate-middle-x mb-3">
+        <a href="#undangan" class="arrow position-absolute bottom-0 start-50 translate-middle-x mb-3" onclick="enableScroll()">
           <i class="bi bi-arrow-bar-down fs-1"></i></a>
       </main>
     </section>
@@ -243,11 +243,38 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <h2>Konfirmasi Kehadiran</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-              Voluptatem magnam sed exercitationem dolor! Ratione, sapiente.
-            </p>
+            <p>isi form dibawah ini untuk konfirmasi kehadiran.</p>
           </div>
         </div>
+
+        <form class="row row-cols-lg-auto row-cols-md-auto row-cols-sm-auto row-cols-auto g-3 align-items-center justify-content-center mt-2 form-confirm">
+          <div class="col-12 form-nama">
+            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Nama">
+            </div>
+          </div>
+
+          <div class="col-12 form-jumlah">
+            <label class="visually-hidden" for="inlineFormInputGroupUsername">Jumlah</label>
+            <div class="input-group">
+              <input type="number" class="form-control" id="inlineFormInputGroupUsername" placeholder="Jumlah" value="1" length="1" min="1" max="5">
+            </div>
+          </div>
+        
+          <div class="col-12 form-status">
+            <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+            <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Status</option>
+              <option value="1">Hadir</option>
+              <option value="0">Tidak Hadir</option>
+            </select>
+          </div>
+        
+          <div class="col-12 btn-confirm">
+            <button type="submit" class="btn btn-danger confirm-btn">Kirim</button>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -255,17 +282,53 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Giving Gift</h2>
+            <h2>Beri Hadiah</h2>
           </div>
         </div>
 
         <div class="row justify-content-center text-center">
-          <a href="img/qrisdani.png">
-            <img src="img/qrisdani.png" alt="QrisDani" class="img-fluid qris-img w-25">
-          </a>
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold bank">QRIS</div>
+                <div>
+                  <a href="img/qrisdani.png" data-toggle="lightbox"><img src="img/qrisdani.png" alt="QrisDani" class="w-50"></a>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <div class="fw-bold bank">MANDIRI</div>
+                CAPTAIN DANI - 0909090909
+              </li>
+
+              <li class="list-group-item">
+                <div class="fw-bold bank">BNI</div>
+                CAPTAIN DANI - 0101010101
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
+
+    <footer id="footer" class="footer">
+      <div class="row justify-content-center text-center">
+        <div class="col text-center">
+          <small class="footer-text block">&copy; 2025 Danur Wedding. All Rights Reserved.</small>
+          <ul class="list-inline d-block justify-content-center mt-3">
+            <li>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bottom Nav -->
     <nav class="navbar navbar-dark bg-danger navbar-expand d-sm-none d-lg-none d-xl-none sticky-bottom mynavbottom">
@@ -292,6 +355,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="sticky.js"></script>
+    <script src="scroll.js"></script>
   </body>
 
 </html>
