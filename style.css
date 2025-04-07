@@ -60,6 +60,32 @@ body{
   transition: 0.3s ease-in-out;
 }
 
+/* pengantar */
+.pengantar{
+  background-image: url(img/bg11.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.box-pengantar{
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: 1px solid var(--putih);
+}
+
+.box-pengantar h4{
+  color: var(--putih);
+  padding: 10px;
+  margin: 5px;
+  margin-top: 20px !important;
+}
+
+.box-pengantar p{
+  letter-spacing: 1px;
+  padding: 10px 30px;
+}
+
 /* navbar */
 .mynavbar, .mynavbottom{
   background-color: rgba(0, 0, 0, 0.3) !important;
