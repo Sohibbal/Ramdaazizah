@@ -188,7 +188,7 @@ body{
 
 /* info */
 .info{
-  background-image: url(img/bg11.png);
+  background-image: url(img/info.jpg);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -355,7 +355,7 @@ body{
 
 /* confirm */
 .confirm{
-  background-image: url(img/bg11.png);
+  background-image: url(img/info.jpg);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
