@@ -365,7 +365,7 @@ body{
 
 /* Gift */
 .gifts{
-  background-image: url(img/bg11.png);
+  background-image: url(img/gifts.jpg);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
