@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-4 mt-5 mb-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="dashboard-title">DASHBOARD</div>
+      <div class="username text-center">
+        <a href="../login.html" class="d-block text-decoration-none text-white">
+          <i class="bi bi-box-arrow-right fs-1 d-block"></i>
+          <span style="text-decoration: none;">Logout</span>
+        </a>
+      </div>      
+    </div>
+
+    
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-10">
+        <div class="nav-links my-3">
+          <a href="datatamu.html">Data Tamu</a> |
+          <a href="tambahtamu.html">Add Tamu</a> |
+          <a href="editlandingpage.html" class="fw-bold">Edit</a>
+        </div>
+        <div class="form-box p-4">
+          <form id="guestForm">
+            <div class="form-mg mb-5">
+              <h4>Cover</h4>
+              <div class="mb-3 row">
+                <label for="pengantinPria" class="col-lg-3 col-sm-3 col-form-label label-text">Pengantin Pria:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="pp-cover" required />
+                </div>
+              </div>
+  
+              <div class="mb-3 row">
+                  <label for="pengantinWanita" class="col-lg-3 col-sm-3 col-form-label label-text">Pengantin Wanita:</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control input-field" id="pw-cover" required />
+                  </div>
+              </div>
+            </div>
+            
+            <div class="form-mg mb-5">
+              <h4>Tujuan</h4>
+              <div class="mb-3 row">
+                <label for="teks-tujuan" class="col-lg-3 col-sm-3 col-form-label label-text">Teks Tujuan:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="teks-tujuan" required />
+                </div>
+              </div>
+  
+              <div class="mb-3 row">
+                  <label for="teks-surah" class="col-lg-3 col-sm-3 col-form-label label-text">Teks Doa:</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control input-field" id="teks-surah" required />
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-mg mb-5">
+              <h4>Home</h4>
+              <div class="mb-3 row">
+                <label for="pengantinPria" class="col-lg-3 col-sm-3 col-form-label label-text">Pengantin Pria:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="pp-home" required />
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="pengantinPria" class="col-lg-3 col-sm-3 col-form-label label-text">Deskripsi:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="dpp-home" required />
+                </div>
+              </div>
+  
+              <div class="mb-3 row">
+                  <label for="pengantinWanita" class="col-lg-3 col-sm-3 col-form-label label-text">Pengantin Wanita:</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control input-field" id="pw-home" required />
+                  </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="pengantinWanita" class="col-lg-3 col-sm-3 col-form-label label-text">Deskripsi:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="dpw-home" required />
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="teks-home" class="col-lg-3 col-sm-3 col-form-label label-text">Teks Pengantar:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="teks-home" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-mg mb-5">
+              <h4>Informasi Acara</h4>
+              <div class="mb-3 row">
+                  <label for="tanggalAkad" class="col-lg-3 col-sm-3 col-form-label label-text">Teks Akad:</label>
+                  <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="tanggalAkad" required />
+                  </div>
+              </div>
+  
+              <div class="mb-3 row">
+                <label for="tanggalResepsi" class="col-lg-3 col-sm-3 col-form-label label-text">Teks Resepsi:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="tanggalResepsi" required />
+                </div>
+              </div>
+  
+              <div class="mb-3 row">
+                  <label for="lokasi" class="col-lg-3 col-sm-3 col-form-label label-text">Lokasi:</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control input-field" id="lokasi" placeholder="Link G-Maps" />
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-mg mb-5">
+              <h4>Story</h4>
+              <div class="mb-3 row">
+                <label for="teks-1" class="col-lg-3 col-sm-3 col-form-label label-text">Teks Story 1:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="teks-1" required />
+                </div>
+              </div>
+              
+              <div class="mb-3 row">
+                <label for="teks-2" class="col-lg-3 col-sm-3 col-form-label label-text">Teks Story 2:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="teks-2" required />
+                </div>
+              </div>
+  
+              <div class="mb-3 row">
+                <label for="teks-1" class="col-lg-3 col-sm-3 col-form-label label-text">Teks Story 3:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="teks-3" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-mg mb-5">
+              <h4>Galery</h4>
+              <div class="mb-3 row">
+                <label for="galeri-1" class="col-lg-3 col-sm-3 col-form-label label-text">Galeri 1:</label>
+                <div class="col-sm-8">
+                  <input type="file" class="form-control input-field" id="galeri-1" accept="image/*" onchange="previewImage(event)" />
+                  <div class="mt-3">
+                    <img id="imagePreview" src="#" alt="Preview Gambar" style="max-width: 100%; display: none;" class="img-thumbnail" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="galeri-2" class="col-lg-3 col-sm-3 col-form-label label-text">Galeri 2:</label>
+                <div class="col-sm-8">
+                  <input type="file" class="form-control input-field" id="galeri-2" accept="image/*" onchange="previewImage(event)" />
+                  <div class="mt-3">
+                    <img id="imagePreview" src="#" alt="Preview Gambar" style="max-width: 100%; display: none;" class="img-thumbnail" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="galeri-3" class="col-lg-3 col-sm-3 col-form-label label-text">Galeri 3:</label>
+                <div class="col-sm-8">
+                  <input type="file" class="form-control input-field" id="galeri-3" accept="image/*" onchange="previewImage(event)" />
+                  <div class="mt-3">
+                    <img id="imagePreview" src="#" alt="Preview Gambar" style="max-width: 100%; display: none;" class="img-thumbnail" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="galeri-4" class="col-lg-3 col-sm-3 col-form-label label-text">Galeri 4:</label>
+                <div class="col-sm-8">
+                  <input type="file" class="form-control input-field" id="galeri-4" accept="image/*" onchange="previewImage(event)" />
+                  <div class="mt-3">
+                    <img id="imagePreview" src="#" alt="Preview Gambar" style="max-width: 100%; display: none;" class="img-thumbnail" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-mg mb-5">
+              <h4>Gifts</h4>
+              <div class="mb-3 row">
+                <label for="teks-bank" class="col-lg-3 col-sm-3 col-form-label label-text">Teks Rek.Bank:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input-field" id="teks-bank" required />
+                </div>
+              </div>
+              <!-- Input dan preview untuk gambar -->
+              <div class="mb-3 row">
+                <label for="giftImage" class="col-lg-3 col-sm-3 col-form-label label-text">Gambar QR Code:</label>
+                <div class="col-sm-8">
+                  <input type="file" class="form-control input-field" id="giftImage" accept="image/*" onchange="previewImage(event)" />
+                  <div class="mt-3">
+                    <img id="imagePreview" src="#" alt="Preview Gambar" style="max-width: 100%; display: none;" class="img-thumbnail" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="text-end mt-5">
+              <button type="submit" class="btn btn-danger px-4 fw-bold">Save</button>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <script src="tambahtamu.js"></script>
+  <script>
+    function previewImage(event) {
+      const input = event.target;
+      const preview = document.getElementById("imagePreview");
+  
+      if (input.files && input.files[0]) {
+        const reader = new FileReader();
+  
+        reader.onload = function (e) {
+          preview.src = e.target.result;
+          preview.style.display = "block";
+        };
+  
+        reader.readAsDataURL(input.files[0]);
+      } else {
+        preview.src = "#";
+        preview.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -10,3 +10,9 @@ simplyCountdown('.simply-countdown-dark', {
     seconds: { root: 'Detik', lambda: (root, n) => n > 1 ? root + '' : root }
   },
 });
+
+const urlParams = new URLSearchParams(window.location.search);
+const nama = urlParams.get('n');
+
+const namaTamu = document.querySelector('.cover h4 span');
+namaTamu.innerText = nama;

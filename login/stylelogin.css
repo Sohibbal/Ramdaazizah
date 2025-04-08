@@ -1,0 +1,93 @@
+body {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .login-container {
+    text-align: center;
+  }
+  
+  .login-title {
+    font-family: "Bebas Neue", sans-serif;
+    color: #e50914;
+    font-size: 4rem;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+  }
+  
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 50px 60px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  }
+  
+  .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    padding: 5px;
+  }
+
+  ::placeholder {
+    color: #ffffff !important;
+    opacity: 1;
+  }
+  
+  #togglePassword {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .form-control::placeholder {
+    color: white;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 2px solid e50914;
+    border-radius: 0;
+    color: #fff;
+  }
+  
+  .login-btn {
+    background-color: #e50914;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 1.2rem;
+  }
+  
+  .login-btn:hover {
+    background-color: #ff2b2b;
+  }
+  
+/* Hapus icon mata default bawaan browser (Chrome/Edge/Safari) */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-clear-button,
+input[type="password"]::-webkit-reveal-button {
+  display: none;
+  pointer-events: none;
+  appearance: none;
+}

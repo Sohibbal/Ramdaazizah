@@ -1,0 +1,102 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('background.jpg'); /* Ganti dengan gambar latar jika ada */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+  }
+  
+  .dashboard-title {
+    font-family: "Bebas Neue", sans-serif;
+    color: #e50914;
+    font-size: 4rem;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+  }
+  
+  .nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+    background-color: rgba(255,255,255,0.05);
+    color: #ccc;
+  }
+  
+  .table {
+    border: 1px solid #ccc;
+  }
+  
+  .username {
+    text-align: right;
+    font-size: 1.1rem;
+    text-decoration: underline;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .form-box {
+    border: 2px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ccc;
+    padding: 10px;
+  }
+  
+  .label-text {
+    font-family: 'Courier Prime', monospace;
+
+  }
+  
+  .input-field {
+    background-color: #ccc;
+    border: none;
+    font-family: 'Courier Prime', monospace;
+    width: 80%;
+  }
+
+  .input-field:focus {
+    background-color: #ccc;
+  }
+  
+  .btn-danger {
+    background-color: red;
+    border: none;
+    font-family: 'Courier Prime', monospace;
+  }
+  
+  .btn-danger:hover {
+    background-color: darkred;
+  }
+
+  #imagePreview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid whitesmoke !important;
+  }
+
+  .img-thumbnail {
+    background-color: transparent !important;
+  }
+
+  .form-box h4{
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 10px;
+    color: red;
+    letter-spacing: 2px;
+  }
+  
