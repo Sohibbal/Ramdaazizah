@@ -1,25 +1,63 @@
-const domain = "https://ramdaazizah.site"; // Ganti dengan domain kamu
+const domain = "https://ramdaazizah.site";
 
-const guestData = [
-  { no: 1, nama: 'Ridwan', tanggal: '08-04-2025' },
-  { no: 2, nama: 'Siti Aminah', tanggal: '09-04-2025' }
-];
+// Ambil data dari localStorage atau array kosong
+let guestData = JSON.parse(localStorage.getItem('dataTamu')) || [];
 
+// Cek apakah elemen form atau tabel tersedia
 const tableBody = document.getElementById('guestTable');
+const guestForm = document.getElementById('guestForm');
 
-guestData.forEach((guest) => {
-  // Hilangkan spasi atau karakter non-alfanumerik dari nama
-  const namaSlug = guest.nama.replace(/\s+/g, '');
-  // Bisa juga: .replace(/\s+/g, '-').toLowerCase(); → jika mau lowercase dengan dash
+// Fungsi render tabel (khusus halaman datatamu.html)
+function renderTable() {
+  if (!tableBody) return;
 
-  const link = `${domain}?n=${namaSlug}`;
+  tableBody.innerHTML = '';
+  guestData.forEach((guest, index) => {
+    const namaSlug = guest.nama.replace(/\s+/g, '');
+    const link = `${domain}?n=${namaSlug}`;
 
-  const row = document.createElement('tr');
-  row.innerHTML = `
-    <td>${guest.no}</td>
-    <td>${guest.nama}</td>
-    <td>${guest.tanggal}</td>
-    <td><a href="${link}" target="_blank">${link}</a></td>
-  `;
-  tableBody.appendChild(row);
-});
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${index + 1}</td>
+      <td>${guest.nama}</td>
+      <td>${guest.tanggal}</td>
+      <td><a href="${link}" target="_blank">${link}</a></td>
+      <td>
+        <button class="btn btn-sm btn-danger" onclick="deleteGuest(${index})">
+          <i class="bi bi-trash">Hapus</i>
+        </button>
+      </td>
+    `;
+    tableBody.appendChild(row);
+  });
+}
+
+// Fungsi hapus tamu
+function deleteGuest(index) {
+  if (confirm('Yakin ingin menghapus tamu ini?')) {
+    guestData.splice(index, 1);
+    localStorage.setItem('dataTamu', JSON.stringify(guestData));
+    renderTable();
+  }
+}
+
+// Fungsi tambah tamu (khusus halaman tambah tamu)
+if (guestForm) {
+  guestForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const nama = document.getElementById('namaTamu').value.trim();
+    const tanggal = new Date().toLocaleDateString('id-ID');
+
+    if (nama) {
+      guestData.push({ nama, tanggal });
+      localStorage.setItem('dataTamu', JSON.stringify(guestData));
+      guestForm.reset();
+
+      // Redirect ke halaman data tamu setelah berhasil tambah
+      window.location.href = "datatamu.html";
+    }
+  });
+}
+
+// Render tabel hanya jika di halaman datatamu.html
+renderTable();

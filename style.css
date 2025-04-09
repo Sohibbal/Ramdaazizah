@@ -363,6 +363,10 @@ body{
   padding-bottom: 8rem;
 }
 
+.discus{
+  color: var(--putih) !important;
+}
+
 /* Gift */
 .gifts{
   background-image: url(img/gifts.jpg);
@@ -764,6 +768,11 @@ footer a:hover{
 
   .list-group-item{
     padding: 15px;
+  }
+
+  .audio-container{
+    bottom: 7rem;
+    right: 1rem;
   }
 }
 
