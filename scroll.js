@@ -14,6 +14,13 @@ function disableScroll(){
 function enableScroll(){
     window.onscroll = function(){}
     rootElement.style.scrollBehavior = 'smooth';
+    playAudio();
+}
+
+function playAudio(){
+    const music = document.querySelector('#song');
+    music.volume = 0.1;
+    music.play();
 }
 
 disableScroll();
