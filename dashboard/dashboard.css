@@ -1,17 +1,22 @@
+:root{
+  --red: #dc3545;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rba(0, 0, 0, 0.5);
+  --putih: #d4d4d4;
+}
+
 body {
-    background-color: #000;
-    color: #fff;
+    background-image: url(asset/bg11.png);
     font-family: 'Courier New', Courier, monospace;
-    background-image: url('background.jpg'); /* Ganti dengan gambar latar jika ada */
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    min-height: 100vh;
   }
   
   .dashboard-title {
     font-family: "Bebas Neue", sans-serif;
-    color: #e50914;
+    color: var(--red);
     font-size: 4rem;
     letter-spacing: 4px;
     margin-bottom: 40px;
@@ -35,13 +40,15 @@ body {
   }
   
   .table {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   .username {
     text-align: right;
     font-size: 1.1rem;
-    text-decoration: underline;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1.5px;
   }
   
   .table-responsive {
@@ -72,9 +79,11 @@ body {
   }
   
   .btn-danger {
-    background-color: red;
+    background-color:var(--red);
     border: none;
-    font-family: 'Courier Prime', monospace;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    color: #0a0a0a;
   }
   
   .btn-danger:hover {
@@ -96,7 +105,7 @@ body {
   .form-box h4{
     font-family: "Bebas Neue", sans-serif;
     margin-top: 10px;
-    color: red;
+    color: var(--red);
     letter-spacing: 2px;
   }
   

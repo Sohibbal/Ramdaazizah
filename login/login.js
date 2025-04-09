@@ -1,12 +1,20 @@
 function login() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-  
-    if (username && password) {
-      alert(`Welcome, ${username}!`);
-    } else {
-      alert('Please enter both username and password.');
-    }
+  // Ambil nilai input
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // Tetapkan username dan password yang benar
+  const validUsername = "admin";
+  const validPassword = "12345";
+
+  // Cek apakah cocok
+  if (username === validUsername && password === validPassword) {
+    // Arahkan ke halaman tertentu jika login berhasil
+    window.location.href = "dashboard/datatamu.html"; // ganti dengan halaman tujuanmu
+  } else {
+    // Tampilkan alert jika login gagal
+    alert("Username atau password salah!");
+  }
 }
 
 const togglePassword = document.getElementById('togglePassword');

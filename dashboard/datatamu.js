@@ -23,8 +23,7 @@ function renderTable() {
       <td>${guest.tanggal}</td>
       <td><a href="${link}" target="_blank">${link}</a></td>
       <td>
-        <button class="btn btn-sm btn-danger" onclick="deleteGuest(${index})">
-          <i class="bi bi-trash">Hapus</i>
+        <button class="btn btn-sm btn-danger" onclick="deleteGuest(${index})">Hapus</i>
         </button>
       </td>
     `;
